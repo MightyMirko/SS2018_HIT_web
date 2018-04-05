@@ -1,0 +1,19 @@
+﻿.iimageFrame{
+
+	width:90%;
+	border: 3px solid black;	
+	font-size: 12px ;
+	color: black;
+	margin:auto;
+	padding-top: 15px;
+	margin-top:15px;
+	margin-bottom:15px;
+	overflow:auto;
+}
+
+.iimage{
+	height:auto;
+	width:80%;
+	margin:auto;
+	padding:15px;
+}
