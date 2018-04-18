@@ -1,8 +1,7 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="de" >
 
 <head>
-<meta content="de" http-equiv="Content-Language">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta content="Methodisches Entwickeln von Projekten" name="description">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -49,6 +48,7 @@ a:active {
 }
 .auto-style23 {
 	font-size: x-large;
+	
 }
 </style>
 </head>
@@ -96,8 +96,8 @@ a:active {
                         Systemtheorie</a>
                         <!--	<a href="0302Funktionsstruktur.html">Funktionsstruktur</a>
 						<a href="0303Morphologie.html">Morphologie</a>
-						<a href="0304VorteileNachteile.html">Vorteile/Nachteile</a>
-						<a href="0305Loesungsalternativen.html">Lösungsalternativen</a>
+						--><a href="0304VorteileNachteile.html">Vorteile/Nachteile</a>
+						<!--<a href="0305Loesungsalternativen.html">Lösungsalternativen</a>
 						<a href="0306Ranking.html">Ranking</a>
 						<a href="0307VerfahrensmatrixNWA.html">Verfahrensmatrix NWA</a>
 						<a href="0308ErgebnisNWA.html">Ergebnis der Nutzwertanalyse</a>-->
@@ -131,34 +131,35 @@ a:active {
         </table>
     </div>
 </div>
-<div class="auto-style2" style="overflow: hidden; margin: 0 auto; width: 1000px; top: 150px; position: relative; left: 0px;">
+<div class="auto-style2" style="overflow: hidden; margin: 0 auto; width: 1200px; top: 150px; position: relative; left: 0px;">
     <table class="auto-style10" style="width: 100%">
         <tr>
             <td class="auto-style15" style="height: 0px">
-            <table style="width: 970px">
-                <tr>
-                    <td style="width: 30px; height: 0px;">
+            <table style="width: 100%">
+                <tr style="height:30px">
+                    <td style="width: 3%; height: 30">
                     <!-- #BeginEditable "NaviVorher" -->
                     <p>
-                    <img alt="Navigation  zur vorherigen Seite" height="36" src="images/back_active.png" width="36"></p>
+                    <img alt="Navigation  zur vorherigen Seite" height="auto" src="images/back_active.png" width="100%"></p>
                     <!-- #EndEditable --></td>
-                    <td class="auto-style2" style="width: 900px; height: 36px;">
+                    <td class="auto-style2" style="width: 94%; height: 100%">
                     <p class="auto-style23">
                     <!-- #BeginEditable "Ueberschrift_Navi" --><strong>
                     Überschrift</strong><!-- #EndEditable --></p>
                     </td>
-                    <td class="auto-style2" style="width: 30px; height: 36px;">
+                    <td class="auto-style2" style="width: 3%; height: 36;">
                     <!-- #BeginEditable "NaviNachher" -->
                     <p>
-                    <img alt="Navigation zur nächsten Seite" height="36" src="images/next_active.png" width="36"></p>
+                    <img alt="Navigation zur nächsten Seite" height="auto" src="images/next_active.png" width="100%"></p>
                     <!-- #EndEditable --></td>
                 </tr>
             </table>
             </td>
         </tr>
         <tr>
-            <td class="auto-style15" style="height: 600px;">
-            <!-- #BeginEditable "Inhalt" -->- Text der Überschrift-<!-- #EndEditable --></td>
+            <td class="auto-style15" style="height: 100%; width:100%">
+            <!-- #BeginEditable "Inhalt" -->- Text der Überschrift-<!-- #EndEditable -->
+            </td>
         </tr>
     </table>
     <br></div>
