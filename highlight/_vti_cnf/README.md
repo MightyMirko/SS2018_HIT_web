@@ -19,3 +19,4 @@ vti_nexttolasttimemodified:TR|20 Apr 2017 09:09:08 -0000
 vti_timecreated:TR|28 Mar 2018 19:26:02 -0000
 vti_cacheddtm:TX|20 Apr 2017 09:09:08 -0000
 vti_filesize:IR|4768
+vti_syncwith_hit-karlsruhe.de\:80/hit-info/info-ws17/foerderband_3d_druck:TR|20 Apr 2017 09:09:08 -0000
