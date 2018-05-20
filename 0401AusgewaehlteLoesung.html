@@ -284,6 +284,31 @@ a:active {
 Johannes Beißwenger
 Simon Gaiser</a>
 	<br>
+	<p> Während dem Aufbau und Test in der Majolika stellten wir einige Fehler am Layout der Platine und an der Lösung der vorherigen Teams fest.
+	Grund genug, eine zweite Major Version der Platine zu entwickeln. <p>
+	
+	<p>Einer der Fehler war die Spannungsversorgung des Relaisshield. Das Shield wurde zwar mit 5V versorgt, der ESP32 kann aber nur 3.3 schalten. Die anliegende Spannungsdifferenz am Transistor - Emitter (relais shield) zu Transistor Basis (3.3V ESP32) führte zu sporadischem Schalten in nicht erwünschten Momenten (während dem Druck). </p>
+	<p class="iimageFrame">
+	<img alt="Error" class="iimage" src="data/20180520_eagle_platinenMajo_rev2/Uebersicht-ohneLED.PNG">
+	<br>Simulation ohne LED mit 3.3 V und 5.0 V. 
+</p>
+Wie man deutlich sehen kann ist bei einer Spannungsversorgung des Transistors mit 3.3V die Spannungsdifferenz Q1_E nach Q1_B = U_Trans ~ 0. Ebenso ist kein Stromfluss festzustellen
+Unser Problem ist die anliegende 5V Versorgung des Transistors. Damit entsteht im HIGH Zustandes des ESP-PIN eine Spannung U_Trans ~ 0.8V. Dies reicht aus um den Transistor zu beschalten und das Relais anzuziehen. 
+		<p>
+	
+	
+	<br> Um dem entgegenzuwirken überlegten wir uns verschiedene Ansätze. Einer dieser Ansätze ist das Nutzen einer Diode in Flussrichtung ESP32 um einen Spannungsabfall von 1.7V zu generieren. Für diesen Spannungsab</p>
+	
+	<p> In der folgenden Simulation untersuchen wir die Auswirkungen einer LED im E-B Netzwerk. Die rote LED soll die Spannungsdifferenz "ausbügeln" und somit das sporadische Schalten unterbinden. Die Simulation wurde mit üblichen Diodenkennwerten parametrisiert (U_Led ~0.7V). </p>
+	
+	<p class="iimageFrame">
+	<img alt="Error" class="iimage" src="data/20180520_eagle_platinenMajo_rev2/Uebersicht-mitLED.PNG">
+	<br>Simulation ohne LED mit 3.3 V und 5.0 V. 
+</p>
+<p>Wie man klar erkennen kann ist der Strom durch die LED in der letzten Simulation gesunken. Somit wird die Spannungsschwelle für eine sporadische Schaltung des Transistor/Relais höher. Da es uns bei der Simulation nur um den experimentellen Beweis der Funktion ging, haben wir die Parameter der Diode (und auch die des Transistors) nicht angepasst.  </p>
+
+	
+	
 			      <p class="iimageFrame">
 	<img alt="Error" class="iimage" src="images/AA_ss18/20180430_FinalCountdown/schaltkasten_angebracht.jpg">
 	<br>So sieht das ganze jetzt aus
